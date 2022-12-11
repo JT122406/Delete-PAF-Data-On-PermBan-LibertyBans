@@ -37,7 +37,7 @@ public class DeletePAFDataOnPermBanLibertyBans extends PAFExtension {
     public void listenToPunishEvent() {
         EventConsumer<PostPunishEvent> listener = event -> {
                 if (event.getPunishment().isPermanent())
-                    PAFPlayerManager.getInstance().getPlayer(event.getPunishment().getVictim().getType().name());
+                    PAFPlayerManager.getInstance().getPlayer(event.getPunishment().getVictim().getType().name()).deleteAccount();
         };
         omnibus.getEventBus().registerListener(PostPunishEvent.class, ListenerPriorities.LOWEST, listener);
     }
