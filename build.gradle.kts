@@ -6,7 +6,8 @@ plugins {
 repositories {
     mavenLocal()
     maven {
-        url = uri("https://oss.sonatype.org/content/groups/public/")
+        name = "papermc"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
     }
 
     maven {
@@ -24,8 +25,9 @@ repositories {
 
 dependencies {
     api("space.arim.libertybans:bans-api:1.0.4")
-    compileOnly("net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT")
-    compileOnly("de.simonsator:BungeecordPartyAndFriends:1.0.90")
+    compileOnly("com.velocitypowered:velocity-api:3.1.2-SNAPSHOT")
+    annotationProcessor("com.velocitypowered:velocity-api:3.1.2-SNAPSHOT")
+    compileOnly("de.simonsator:VelocityPoweredPartyAndFriends:1.0.89")
 }
 
 group = "xyz.lightning-mc"
