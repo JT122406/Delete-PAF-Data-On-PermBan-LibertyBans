@@ -15,6 +15,14 @@ repositories {
     }
 
     maven {
+        url = uri("https://mvn-repo.arim.space/lesser-gpl3/")
+    }
+    
+    maven {
+        url = uri("https://mvn-repo.arim.space/gpl3/")
+    }
+    
+    maven {
         url = uri("https://mvn-repo.arim.space/affero-gpl3/")
     }
 
