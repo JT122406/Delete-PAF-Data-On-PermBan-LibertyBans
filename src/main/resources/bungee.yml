@@ -1,0 +1,6 @@
+name: Delete-PAF-Data-On-PermBan-LibertyBans
+version: '${project.version}'
+main: xyz.lightningmc.deletepafdataonpermbanlibertybans.DeletePAFDataOnPermBanLibertyBans
+depends:
+  - 'LibertyBans'
+  - 'PartyAndFriends'
